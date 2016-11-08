@@ -9,7 +9,7 @@ import org.aspectj.lang.annotation.Aspect;
 import cs544.exercise6_1.EmailSender;
 
 @Aspect
-public class EmailTrace {
+public class EmailAdvice {
 	@AfterReturning(pointcut = "execution(* cs544.exercise6_1.EmailSender.sendEmail(..))", returning = "retValue")
 	public void tracemethod(JoinPoint join, String retValue){
 		System.out.println(new Date() + "Method= SendEmail");

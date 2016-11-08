@@ -14,6 +14,7 @@
 	<bean id="customerDAO" class="cs544.exercise6_1.CustomerDAO" />
 	<bean id="emailSender" class="cs544.exercise6_1.EmailSender" />
 	<aop:aspectj-autoproxy></aop:aspectj-autoproxy>
-	<bean id="emailTrace" class="cs544.exercise6_1.aopadvice.EmailTrace"></bean>
 	<bean id="timeTrace" class="cs544.exercise6_1.aopadvice.TimeAdvice"></bean>
+	<bean id="emailTrace" class="cs544.exercise6_1.aopadvice.EmailAdvice"></bean>
+	
 </beans>
